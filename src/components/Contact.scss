@@ -5,48 +5,45 @@
   width: 220px;
   display: flex;
   align-items: center;
-}
 
-/* Contact image */
-.Contact .avatar {
-  border-radius: 50%;
-  margin-right: 1em;
-  width: 48px;
-  height: 48px;
-}
+  & .avatar{
+    border-radius: 50%;
+    margin-right: 1em;
+    width: 48px;
+    height: 48px;    
+  }
 
-/* Name */
-.Contact .name {
-  margin: 0 0 0.25rem;
-  color: #eee;
-}
+  & .name {
+    margin: 0 0 0.25rem;
+    color: #eee;    
+  }
 
-/* Status text */
-.Contact .status .status-text {
-  color: #999;
-  margin: 0;
-}
+  & .status{
+    & div{
+      display: flex;
+      align-items: center;
+    }
 
-/* Status (rounded&colored indicator) */
-.Contact .status .status-online,
-.Contact .status .status-offline {
-  display: inline-block;
-  border-radius: 50%;
-  width: 8px;
-  height: 8px;
-  margin-right: 6px;
-}
+    & .status-text{
+      color: #999;
+      margin: 0;      
+    }
 
-.Contact .status .status-online {
-  background: #aed581;
-}
+    & .status-online{
+      background: #aed581;
+    }
 
-.Contact .status .status-offline {
-  background: #f4511e;
-}
+    & .status-offline{
+      background: #f4511e;
+    }
 
-.Contact .status div {
-  display: flex;
-  align-items: center;
+    & .status-online, .status-offline{
+      display: inline-block;
+      border-radius: 50%;
+      width: 8px;
+      height: 8px;
+      margin-right: 6px;
+    }
+  }
 }
 
